@@ -1,7 +1,7 @@
 function getRefs() {
   return {
     cardContainer: document.querySelector('.cardContainer'),
-    searchInput: document.querySelector('.countriesInput'),
+    searchInput: document.querySelector('.countries__input'),
   };
 }
 

@@ -1,0 +1,16 @@
+body {
+  // text-align: center;
+
+  font-size: 18px;
+
+  background-color: grey;
+}
+.countries__input {
+  margin-top: 20px;
+  height: 40px;
+  width: 300px;
+}
+.countries__input::placeholder {
+  font-size: 16px;
+  color: rgba(120, 120, 120, 0.3);
+}

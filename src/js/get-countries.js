@@ -1,6 +1,6 @@
 import Refs from './01-get-refs';
 import fetchCountries from './02-fetch-countries.js';
-import renderCountries from './03-render-countries.js';
+import { renderCountries } from './03-render-countries.js';
 
 const debounce = require('lodash.debounce');
 
@@ -13,11 +13,11 @@ function onInput(e) {
   }
   fetchCountries(e.target.value)
     .then(renderCountries)
-    // .catch(onFetchError)
+    .catch(onFetchError)
 }
 
 function onFetchError(error) {
- console.log('ERROR! Enter valid name of contry');
+ alert(error);
 }
 
 function clearMarkup() {
