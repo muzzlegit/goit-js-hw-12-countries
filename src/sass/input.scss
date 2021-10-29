@@ -1,0 +1,11 @@
+.countries__input {
+  margin-top: 20px;
+  height: 40px;
+  width: 300px;
+
+  color: #a83b24;
+}
+.countries__input::placeholder {
+  font-size: 16px;
+  color: rgba(120, 120, 120, 0.3);
+}

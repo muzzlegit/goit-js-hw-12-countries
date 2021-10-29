@@ -1,16 +1,20 @@
 body {
   // text-align: center;
 
-  font-size: 18px;
+  font-size: 26px;
 
-  background-color: grey;
+  background-color: #171e13;
 }
-.countries__input {
-  margin-top: 20px;
-  height: 40px;
-  width: 300px;
+.title {
+  text-align: center;
+  color: #561d18;
+  text-shadow: -1px -1px 2px #a83b24;
+  animation-name: bounceIn;
+  animation-delay: 700ms;
+  animation-duration: 1000ms;
 }
-.countries__input::placeholder {
-  font-size: 16px;
-  color: rgba(120, 120, 120, 0.3);
+.countries {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

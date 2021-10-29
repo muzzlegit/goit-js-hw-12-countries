@@ -4,7 +4,7 @@ import { renderCountries } from './03-render-countries.js';
 
 const debounce = require('lodash.debounce');
 
-Refs.searchInput.addEventListener('input', debounce(onInput, 500));
+Refs.searchInput.addEventListener('input', debounce(onInput, 1000));
 
 function onInput(e) {
   if (!e.target.value) {
@@ -13,11 +13,6 @@ function onInput(e) {
   }
   fetchCountries(e.target.value)
     .then(renderCountries)
-    .catch(onFetchError)
-}
-
-function onFetchError(error) {
- alert(error);
 }
 
 function clearMarkup() {

@@ -12,7 +12,7 @@ export function renderCountries(country) {
     renderCountryList(country);
   } else if (country.length > 10) {
     notice({
-      title: 'Animate.css Effect',
+      title: 'WARNING!',
       text: 'Too many matches found. Please enter a more specific query',
       hide: true,
       delay: 3000,
