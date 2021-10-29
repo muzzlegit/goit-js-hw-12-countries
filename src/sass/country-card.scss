@@ -7,14 +7,20 @@
   }
   &__img {
     width: 400px;
-    animation-name: flipInX;
-
-    animation-duration: 1000ms;
     border-radius: 10px;
+
+    animation-name: flipInX;
+    animation-duration: 1000ms;
+
+    @media screen and (max-width: 600px) {
+      width: 200px;
+    }
   }
   &__information {
     margin-left: 30px;
-    // color: #e7ddd2;
     color: #b47c4b;
+    @media screen and (max-width: 600px) {
+      margin-left: 16px;
+    }
   }
 }

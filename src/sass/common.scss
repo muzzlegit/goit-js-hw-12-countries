@@ -1,17 +1,20 @@
 body {
-  // text-align: center;
-
-  font-size: 26px;
-
   background-color: #171e13;
 }
 .title {
   text-align: center;
+
+  font-size: 52px;
   color: #561d18;
   text-shadow: -1px -1px 2px #a83b24;
+
   animation-name: bounceIn;
   animation-delay: 700ms;
   animation-duration: 1000ms;
+
+  @media screen and (max-width: 600px) {
+    font-size: 26px;
+  }
 }
 .countries {
   display: flex;
