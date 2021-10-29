@@ -9,7 +9,7 @@ export function renderCountries(country) {
    if (country.length === 1) {
      renderCountryCard(country);
   } else if (country.length > 1 && country.length <= 10) {
-    renderCountryList(country);
+     renderCountryList(country);
   } else if (country.length > 10) {
     notice({
       title: 'WARNING!',
