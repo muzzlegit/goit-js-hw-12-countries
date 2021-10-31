@@ -19,8 +19,7 @@ export function renderCountries(country) {
           outClass: 'slideOutRight'
         }]
       ]),
-    });
-    
+    }); 
   }
    if (country.length === 1) {
      renderCountryCard(country);
