@@ -6,6 +6,22 @@ import {notice, defaultModules} from '@pnotify/core';
 import * as PNotifyAnimate from '@pnotify/animate';
 
 export function renderCountries(country) {
+  if (country.status === 404) {
+    notice({
+      title: 'NOT FOUND!',
+      text: 'Sorry, but we can\'t found your country. Try clarify your query',
+      hide: true,
+      delay: 3000,
+      modules: new Map([
+        ...defaultModules,
+        [PNotifyAnimate, {
+          inClass: 'slideInRight',
+          outClass: 'slideOutRight'
+        }]
+      ]),
+    });
+    
+  }
    if (country.length === 1) {
      renderCountryCard(country);
   } else if (country.length > 1 && country.length <= 10) {
