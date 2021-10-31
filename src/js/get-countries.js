@@ -13,7 +13,7 @@ function onInput(e) {
   }
   fetchCountries(e.target.value)
     .then(renderCountries)
-    .catch(console.log("error"))
+    .catch(error => console.log(error))
 }
 
 function clearMarkup() {
